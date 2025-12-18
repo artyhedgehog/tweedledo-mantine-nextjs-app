@@ -10,4 +10,5 @@ export default withBundleAnalyzer({
     optimizePackageImports: ['@mantine/core', '@mantine/hooks'],
   },
   distDir: 'out',
+  output: 'export',
 });
