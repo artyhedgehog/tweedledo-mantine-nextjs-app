@@ -1,7 +1,7 @@
 'use client';
 
 import { IconShoppingBagEdit } from '@tabler/icons-react';
-import { AppShell, Burger, Center, NavLink, Title } from '@mantine/core';
+import { Anchor, AppShell, Burger, Center, NavLink, Title } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
 import { Welcome } from '../components/Welcome/Welcome';
@@ -40,7 +40,10 @@ export default function HomePage() {
       </AppShell.Main>
 
       <AppShell.Footer>
-        <Center>Created by @artyhedgehog in 2025.</Center>
+        <Center>
+          Created by <Anchor href="https://github.com/artyhedgehog">@artyhedgehog</Anchor>
+          in 2025.
+        </Center>
       </AppShell.Footer>
     </AppShell>
   );
